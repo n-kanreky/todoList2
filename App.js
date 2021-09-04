@@ -8,6 +8,11 @@ import {
   View
 } from "react-native";
 import { SwipeListView } from "react-native-swipe-list-view";
+import { create } from 'tailwind-rn'
+import styles from './styles.json'
+
+const { tailwind } = create(styles)
+export { tailwind }
 
 const Todo = props => {
   return (
